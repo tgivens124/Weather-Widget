@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Weather Widget</title>
   </head>
   <body>
     <div class="Weather-Container">
-      <input type="text" class="search-bar" />
-      <button>
+      <input type="text" class="search-bar" placeholder="Search" />
+      <button class="search-button">
         <svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
           viewBox="0 0 1024 1024"
-          height="1em"
-          width="1em"
+          height="1.5em"
+          width="1.5em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -26,9 +33,15 @@
         </svg>
       </button>
       <h2 class="city-name">Weather in Dallas</h2>
-      <p class="description">Clear Sky</p>
-      <p class="temp">Temperature: 82.72°F</p>
-      <p class="wind">Wind Speed: 5.75 mph</p>
+      <h1 class="temp">82.72</h1>
+      <p class="farenheight">°F</p>
+      <img src="/" alt="icon" class="icon" />
+      <div class="description-container">
+        <div class="description">Clear Sky</div>
+        <div class="wind">Wind Speed: 5.75 km/h</div>
+        <div class="humidity">Humidity: 35%</div>
+      </div>
     </div>
+    <script src="widget.js"></script>
   </body>
 </html>
