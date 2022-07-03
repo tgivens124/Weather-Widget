@@ -15,7 +15,7 @@
     <title>Weather Widget</title>
   </head>
   <body>
-    <div class="Weather-Container">
+    <div class="Weather-Container loading">
       <input type="text" class="search-bar" placeholder="Search" />
       <button class="search-button">
         <svg
@@ -32,14 +32,18 @@
           ></path>
         </svg>
       </button>
-      <h2 class="city-name">Weather in Dallas</h2>
-      <h1 class="temp">82.72</h1>
-      <p class="farenheight">°F</p>
-      <img src="/" alt="icon" class="icon" />
-      <div class="description-container">
-        <div class="description">Clear Sky</div>
-        <div class="wind">Wind Speed: 5.75 km/h</div>
-        <div class="humidity">Humidity: 35%</div>
+      <div class="text-container loading">
+        <h2 class="city-name">Weather in Dallas</h2>
+        <div class="temp-container">
+          <h1 class="temp">82.7</h1>
+          <p class="farenheight">°F</p>
+        </div>
+        <img src="/" alt="icon" class="icon" />
+        <div class="description-container">
+          <div class="description">Clear Sky</div>
+          <div class="wind">Wind Speed: 5.75 km/h</div>
+          <div class="humidity">Humidity: 35%</div>
+        </div>
       </div>
     </div>
     <script src="widget.js"></script>

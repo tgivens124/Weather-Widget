@@ -9,8 +9,8 @@ body{
     background-size: 100%;
 }
 .Weather-Container{
-display: flexbox;
-position: absolute;
+    display:flexbox;
+position:absolute;
 top: 22%;
 left: 34%;
 color: white;
@@ -19,17 +19,16 @@ width: 33%;
 height: 50%;
 padding: 2em;
 border-radius: 30px;
-
 }
 
 .search-bar{
-    width: 50%;
-    height: 10%;
+    width: 250px;
+    height: 40px;
     background: rgba(110, 110, 110, 0.426);
     border: none;
     border-radius: 30px;
-    position: absolute;
-    left: 23%;
+    position: relative;
+    left: 20%;
     font-size: 20px;
     padding: 1em;
     color: aliceblue;
@@ -37,13 +36,14 @@ border-radius: 30px;
 
 }
 .search-button{
-    position: absolute;
-    left: 75%;
+    
+    position: relative;
+    left: 23%;
     border-radius: 50%;
     border: none;
-    height: 10%;
-    width: 8%;
-    top: 9%;
+    height: 40px;
+    width: 10%;
+    top: 0%;
     background:rgba(110, 110, 110, 0.426);
     color: white;
 }
@@ -51,29 +51,32 @@ border-radius: 30px;
     cursor: pointer;
     background:  rgba(133, 133, 133, 0.426);
 }
+
+.text-container{
+    position: relative;
+}
 .city-name{
     position: relative;
     top: 12%;
     font-size: 30px;
 }
+
 .temp{
     position: relative;
     top: 10%;
     font-size: 40px;
-    margin-left: 1.5%;
+    margin-left: 5%;
     left: 90px;
 }
 .farenheight{
     position: absolute;
-    top: 36.3%;
-    left: 45%;
-    margin-left: 2.5%;
+    top: 20%;
+    left: 50%;
     font-size: 25px;
 }
 .icon{
     position:absolute;
-    left: 4.9%;
-    top: 36%;
+    top: 20%;
     width: 100px;
     height: 100px;
 }
@@ -103,6 +106,14 @@ border-radius: 30px;
     font-size: large;
     left: 5px;
 }
+.text-container.loading{
+    visibility: hidden;
+}
+.Weather-Container.loading{
+   
+top: 40%;
+padding: 18px;
+height: 10.5%;
 
-
+}
 

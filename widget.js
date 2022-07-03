@@ -26,6 +26,8 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".icon").src =
       "http://openweathermap.org/img/w/" + icon + ".png";
+    document.querySelector(".Weather-Container").classList.remove("loading");
+    document.querySelector(".text-container").classList.remove("loading");
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
@@ -35,3 +37,10 @@ let weather = {
 document.querySelector(".search-button").addEventListener("click", function () {
   weather.search();
 });
+document
+  .querySelector(".search-bar")
+  .addEventListener("keyup", function (event) {
+    if (event.key == "Enter") {
+      weather.search();
+    }
+  });
