@@ -11,12 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather Widget</title>
   </head>
   <body>
-    <div class="Weather-Container loading">
-      <input type="text" class="search-bar" placeholder="Search" />
+    <p class="last-updated">Last Updated:</p>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search Location" />
       <button class="search-button">
         <svg
           stroke="currentColor"
@@ -32,20 +44,41 @@
           ></path>
         </svg>
       </button>
-      <div class="text-container loading">
-        <h2 class="city-name">Weather in Dallas</h2>
-        <div class="temp-container">
-          <h1 class="temp">82.7</h1>
-          <p class="farenheight">°F</p>
+      <li>
+        <p class="New-York">New York</p>
+        <p class="Dallas">Dallas</p>
+        <p class="Chicago">Chicago</p>
+      </li>
+      <h4 class="Weather-Details">Weather Details</h4>
+      <div class="column-container">
+        <p class="wind">Wind 5.75km/h</p>
+        <p class="humidity">Humidity 35%</p>
+        <div>
+          <p class="feels-like">Feels like</p>
+          <p class="feels-like">103°F</p>
         </div>
-        <img src="/" alt="icon" class="icon" />
+        <div>
+          <p class="rain-in-inches">Rainfall</p>
+          <p class="rain-in-inches">3 inches</p>
+        </div>
+        <p class="cloudiness">Clouds 50%</p>
+      </div>
+    </div>
+    <span class="divider"></span>
+    <div class="city-container">
+      <div class="farenheight-container">
+        <h1 class="temp">82.78</h1>
+        <h3 class="farenheight">°F</h3>
+      </div>
+      <div class="city-description-container">
+        <h2 class="city-name">New York, New York</h2>
         <div class="description-container">
           <div class="description">Clear Sky</div>
-          <div class="wind">Wind Speed: 5.75 km/h</div>
-          <div class="humidity">Humidity: 35%</div>
+          <img src="/" alt="icon" class="icon" />
         </div>
       </div>
     </div>
+
     <script src="widget.js"></script>
   </body>
 </html>
