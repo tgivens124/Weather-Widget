@@ -17,7 +17,6 @@ let weather = {
     const { humidity } = data.current;
     const { wind_mph } = data.current;
     const { region } = data.location;
-    const { icon } = data.current.condition;
     const { last_updated } = data.current;
     console.log(name, text, temp_f, humidity, wind_mph, last_updated);
     document.querySelector(".city-name").innerText = name + ", " + region;
@@ -26,7 +25,6 @@ let weather = {
     document.querySelector(".wind").innerText = "Wind " + wind_mph + "km/h";
     document.querySelector(".humidity").innerText =
       "Humidity " + humidity + "%";
-    document.querySelector(".icon").src = icon;
     document.querySelector(".last-updated").innerText =
       "Last Updated: " + last_updated;
   },
